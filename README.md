@@ -4,6 +4,17 @@
  Netflix Data Analysis using SQL
 ## Solutions of 15 business problems
 
+<pre> ```sql -- Example SQL query SELECT * FROM users 
+	WHERE signup_date >= '2024-01-01' 
+	ORDER BY signup_date DESC; 
+``` </pre>
+
+
+
+
+
+
+
 '''sql
 SELECT 
 	type,
