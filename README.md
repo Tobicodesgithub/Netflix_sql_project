@@ -1,7 +1,8 @@
 # Netflix Data Analysis Project
 ![Netflix logo](https://github.com/Tobicodesgithub/Netflix_sql_project/blob/main/logo.png)
--- Netflix Data Analysis using SQL
--- Solutions of 15 business problems
+
+ Netflix Data Analysis using SQL
+## Solutions of 15 business problems
 -- 1. Count the number of Movies vs TV Shows
 
 SELECT 
@@ -10,7 +11,7 @@ SELECT
 FROM netflix
 GROUP BY 1
 
--- 2. Find the most common rating for movies and TV shows
+## 2. Find the most common rating for movies and TV shows
 
 WITH RatingCounts AS (
     SELECT 
