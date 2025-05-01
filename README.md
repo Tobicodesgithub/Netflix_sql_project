@@ -4,26 +4,23 @@
  Netflix Data Analysis using SQL
 ## Solutions of 15 business problems
 
-<pre> ```sql -- Example SQL query SELECT * FROM users 
-	WHERE signup_date >= '2024-01-01' 
-	ORDER BY signup_date DESC; 
-``` </pre>
 
+```sql 
+SELECT * FROM users 
+WHERE signup_date >= '2024-01-01' 
+ORDER BY signup_date DESC; 
+```
 
-
-
-
-
-
-'''sql
+```sql
 SELECT 
 	type,
 	COUNT(*)
 FROM netflix
 GROUP BY 1
-'''
+```
 ## 2. Find the most common rating for movies and TV shows
 
+```sql
 WITH RatingCounts AS (
     SELECT 
         type,
@@ -45,7 +42,7 @@ SELECT
     rating AS most_frequent_rating
 FROM RankedRatings
 WHERE rank = 1;
-
+```
 
 -- 3. List all movies released in a specific year (e.g., 2020)
 
